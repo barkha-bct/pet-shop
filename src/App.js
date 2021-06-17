@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './Components/Home';
+import Dog from './Components/Dog';
+import Cat from './Components/Cat';
+import Header from './Components/Header';
+import Offers from './Components/Offers';
+import Error from './Components/ErrorComponent';
+import Body from './Components/Body';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      {/* <Body /> */}
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/dog-food" render={(props) => <Body section="Dog" />} />
+        <Route path="/cat-food" render={(props) => <Body section="Dog" />} />
+        <Route path="/dog-toys"  render={(props) => <Body section="Dog" />} />
+        <Route path="/offers"  render={(props) => <Body section="Offers" />} />
+        <Route component={Error} />
+      </Switch>
+    </Router>
   );
 }
 

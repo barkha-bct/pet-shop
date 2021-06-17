@@ -1,0 +1,29 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+   /* height: 100%;*/
+}
+
+.column {
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.add-to-cart-button {
+    background-color: #333;
+    color: white;
+    height: 30px;
+}
+
+.add-to-cart-button:hover {
+    opacity: 0.8;
+}

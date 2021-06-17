@@ -1,0 +1,6 @@
+.grid-body {
+    display: flex;
+    justify-content: start;
+    margin: 8px;
+    flex-wrap: wrap;
+}

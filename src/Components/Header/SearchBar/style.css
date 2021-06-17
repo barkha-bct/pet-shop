@@ -1,0 +1,26 @@
+.searchbar input{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    line-height: 24px;
+    width: 95%;
+    color: #696e79;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 8px 10px 10px;
+    margin: 0;
+    outline: 0;
+    border: 2px solid #f5f5f6;
+    border-radius: 4px;
+    background-color: #f5f5f6;
+}
+
+.searchbar {
+    width: 100%;
+}
+
+.searchbar input:focus {
+    background-color: #fff;
+    border-color: #929292;
+}

@@ -1,0 +1,15 @@
+.navBlock {
+    position: absolute;
+    visibility: hidden;
+    list-style: none;
+    width: 180px;
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+    line-height: 35px;
+    top: 80px;
+    transition: all .2s ease-out;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 0 4px rgb(0 0 0 / 15%), 0 2px 4px rgb(0 0 0 / 29%);
+}
